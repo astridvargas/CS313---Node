@@ -1,0 +1,32 @@
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    background: #394032;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.center{
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    background: #E2E2E2;
+    /* Or F0EFF4,  */
+    border-radius: 25px;
+    box-shadow: gray;
+}
+
+.button {
+    width: 300px;
+    height: 25px;
+    background: #736F4E;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}

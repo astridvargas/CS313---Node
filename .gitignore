@@ -1,0 +1,12 @@
+#Node
+node-modules
+nom-debug.log
+
+#Local Development
+*.env
+*.dev
+.DS_Store
+
+#Docker
+Dockerfile
+docker-compose.yml

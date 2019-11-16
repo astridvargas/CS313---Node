@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Import my Stylesheetyourlife -->
+        <link rel="stylesheet" href="/stylesheets/price.css">
+
+        <!-- Import Materialize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Google Fonts -->
+
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto:400i&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        
+        <h1>Mailing Rate Calculator</h1>
+
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <form class="col s12" action="/getRate" method="POST">
+
+                    <!-- Item Weight placeholder -->
+                    <div class="row">
+                        <div class="input-field col s6 offset-s3">
+                            <input id="weight" type="number" name="weight" step="0.1" min="0.1" max="13" class="validate" required>
+                            <label for="weight">Item Weight</label>                            </div>
+                    </div>
+            
+                    <!-- Select mail option -->
+                    <div class="row">
+                        <div class="input-field col s6 offset-s3">
+                            <select name="mail_type" required>
+                                <option value="" disabled selected>Choose an option</option>
+                                <option value="letters_stamped">Letters (Stamped)</option>
+                                <option value="letters_metered">Letters (Metered)</option>
+                                <option value="large_envelopes_flats">Large Envelope (Flats)</option>
+                                <option value="first_class_package_service_retail">First-Class package service retail</option>
+                            </select>
+                            <label>Mail Type</label>
+                        </div>
+                    </div>
+            
+                        <!-- Button -->
+                    <div class="row center buttonContainer">
+                        <button class="waves-effect waves-light btn-small" name="action" type="submit">
+                            submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        
+        <!-- Import Materialize's Javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- My Javascript -->
+        <script src="/javascript/price.js"></script>
+    </body>
+</html>

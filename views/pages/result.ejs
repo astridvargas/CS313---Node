@@ -1,0 +1,71 @@
+<!-- // Form have thr action to rout
+// action '/getRate' -->
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Import my Stylesheetyourlife -->
+        <link rel="stylesheet" href="/stylesheets/price.css">
+
+        <!-- Import Materialize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Google Fonts -->
+
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto:400i&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1>Mailing Rate Calculator</h1>
+
+        <br>
+        
+        <div class="container">
+            <form class="col s12" action="/getRate" method="POST">
+               
+                <!-- Item Weight placeholder -->
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <input id="weight" type="text" value="<%=  weight %>" required disabled>
+                        <label for="weight">Item Weight</label>                            
+                    </div>
+                </div>
+
+                <!-- Mailing options -->
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <input id="mail_name" type="text" value="<%= mail_name %>" required disabled>
+                        <label for="mail_name">Mail Type</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <input type="text" id="price" value="$<%= price %>" required disabled>
+                        <label for="price">Total price</label>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Reset Button -->
+            <div class="center">
+                <a class="button" href="/">
+                    Reset
+                </a>
+            </div>
+
+            <br>
+        </div>
+        
+        <!-- Import Materialize's Javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- My Javascript -->
+        <script src="/javascript/price.js"></script>
+    </body>
+</html>
